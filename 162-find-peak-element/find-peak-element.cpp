@@ -8,19 +8,12 @@ public:
         if(nums[i-1] < nums[i]){
            ans =i;
            if(j<n){
-            if(nums[i]>nums[j])
-            return i;
+            if(nums[i]>nums[j]) return i;
+         }
         }
-        }
-        else{
-            continue;
-        }
+        else continue;
+        
       }
-       // if(nums[i-1]<nums[i] && j<n && nums[i]>nums[j]) return i;
-    //     else{
-    //         continue;
-    //     }
-    //   }
       return ans;  
     }
 };
